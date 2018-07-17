@@ -287,7 +287,7 @@ module.exports = ".add-input {\r\n  width: 250px;\r\n  height: 15px;\r\n  margin
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"div\">\n\n  <input [(ngModel)] =\"newTask\" type=\"text\" class=\"add-input effect\">\n  <label>write task here</label>\n  <button (click)=\"add($event)\"  class=\"add-button\"> <img class=\"plus\" src ='../../../assets/picture/plus.png'/></button>\n\n</div>\n\n<app-list-tasks [listTaskChild]=\"listTask\"></app-list-tasks>\n"
+module.exports = "\n<div class=\"div\">\n\n  <input [(ngModel)] =\"newTask\" type=\"text\" class=\"add-input effect\">\n  <label>write task here</label>\n  <button (click)=\"add($event)\"  class=\"add-button\"> <img class=\"plus\" src ='assets/picture/plus.png'/></button>\n\n</div>\n\n<app-list-tasks [listTaskChild]=\"listTask\"></app-list-tasks>\n"
 
 /***/ }),
 
