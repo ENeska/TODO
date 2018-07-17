@@ -213,7 +213,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n.header{\r\n  background-color: #6200EE;\r\n  height: 100px;\r\n  width: 300px;\r\n  padding-left: 10px;\r\n  display: flex;\r\n  justify-content: center;\r\n  flex-direction: column;\r\n}\r\n\r\nh1, h2 {\r\n  color: white;\r\n  font-family: Calibri;\r\n}\r\n\r\nh2 {\r\n  font-size: 16px;\r\n  font-weight: 200;\r\n}\r\n"
+module.exports = "\r\n.header{\r\n  background-color: #6200EE;\r\n  height: 130px;\r\n  width: 500px;\r\n  padding-left: 10px;\r\n  display: flex;\r\n  justify-content: center;\r\n  flex-direction: column;\r\n}\r\n\r\nh1, h2 {\r\n  color: white;\r\n  font-family: Calibri;\r\n  font-size: 40px;\r\n}\r\n\r\nh2 {\r\n  font-size: 20px;\r\n  font-weight: 200;\r\n}\r\n"
 
 /***/ }),
 
@@ -276,7 +276,7 @@ var HeaderComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".add-input {\r\n  width: 250px;\r\n  height: 15px;\r\n  margin: 30px 10px 30px 0;\r\n  border-top-style: none;\r\n  border-left-style: none;\r\n  border-right-style: none;\r\n  border-bottom: 1px solid grey;\r\n  background-color: white;\r\n  outline: none;\r\n  padding-left: 10px;\r\n  font-family: Calibri;\r\n  font-weight: 200;\r\n  color: #939291;\r\n  font-size: 16px;\r\n  padding-top: 20px;\r\n}\r\n\r\n.add-input:focus {\r\n  border-bottom: 1px solid #6c3dfd;\r\n}\r\n\r\n.add-button {\r\n  width: 35px;\r\n  height: 35px;\r\n  background-color: #6200EE;\r\n  border: none;\r\n  cursor: pointer;\r\n  border-radius: 50%;\r\n  outline: none;\r\n  margin-left: 10px;\r\n}\r\n\r\n.effect {\r\n  font-family: Calibri;\r\n  border: 0;\r\n  padding: 4px 0;\r\n  border-bottom: 1px solid #ccc;\r\n  background-color: transparent;\r\n  font-size: 12px;\r\n  padding-left: 3px;\r\n}\r\n\r\n.effect ~ label{\r\n  font-family: Calibri;\r\n  position: absolute;\r\n  left: 0;\r\n  top: 35px;\r\n  color: #aaa;\r\n  transition: 0.3s;\r\n  z-index: -1;\r\n  font-size: 12px;\r\n  padding-left: 3px;\r\n}\r\n\r\n.effect:focus ~ label{\r\n  font-family: Calibri;\r\n  top: 20px;\r\n  font-size: 9px;\r\n  color: #6c3dfd;\r\n  transition: 0.3s;\r\n}\r\n\r\n.div {\r\n  position: relative;\r\n}\r\n\r\n.plus{\r\n  width: 20px;\r\n  height: 20px;\r\n  padding-top: 3px;\r\n}\r\n"
+module.exports = ".add-input {\r\n  width: 300px;\r\n  height: 30px;\r\n  margin: 50px 10px 30px 0;\r\n  border-top-style: none;\r\n  border-left-style: none;\r\n  border-right-style: none;\r\n  border-bottom: 1px solid grey;\r\n  background-color: white;\r\n  outline: none;\r\n  padding-left: 10px;\r\n\r\n  font-family: Calibri;\r\n  font-weight: 200;\r\n  color: #939291;\r\n  padding-top: 10px;\r\n\r\n  font-size:20px;\r\n}\r\n\r\n.add-input:focus {\r\n  border-bottom: 1px solid #6c3dfd;\r\n\r\n}\r\n\r\n.add-button {\r\n  width: 35px;\r\n  height: 35px;\r\n  background-color: #6200EE;\r\n  border: none;\r\n  cursor: pointer;\r\n  border-radius: 50%;\r\n  outline: none;\r\n  margin-left: 10px;\r\n}\r\n\r\n.effect {\r\n  font-family: Calibri;\r\n  border: 0;\r\n  padding: 4px 0;\r\n  border-bottom: 1px solid #ccc;\r\n  background-color: transparent;\r\n  padding-left: 3px;\r\n}\r\n\r\n.effect ~ label{\r\n  font-family: Calibri;\r\n  position: absolute;\r\n  left: 0;\r\n  top: 60px;\r\n  color: #aaa;\r\n  transition: 0.3s;\r\n  z-index: -1;\r\n  font-size: 18px;\r\n  padding-left: 3px;\r\n}\r\n\r\n.effect:focus ~ label{\r\n  font-family: Calibri;\r\n  top: 20px;\r\n  font-size: 12px;\r\n  color: #6c3dfd;\r\n  transition: 0.3s;\r\n}\r\n\r\n.div {\r\n  position: relative;\r\n}\r\n\r\n.plus{\r\n  width: 20px;\r\n  height: 20px;\r\n  padding-top: 3px;\r\n}\r\n"
 
 /***/ }),
 
@@ -287,7 +287,7 @@ module.exports = ".add-input {\r\n  width: 250px;\r\n  height: 15px;\r\n  margin
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"div\">\n\n  <input [(ngModel)] =\"newTask\" type=\"text\" class=\"add-input effect\">\n  <label>write task here</label>\n  <button (click)=\"add($event)\"  class=\"add-button\"> <img class=\"plus\" src ='./assets/picture/plus.png'/></button>\n\n</div>\n\n<app-list-tasks [listTaskChild]=\"listTask\"></app-list-tasks>\n"
+module.exports = "\n<div class=\"div\">\n\n  <input [(ngModel)] =\"newTask\" type=\"text\" class=\"add-input effect\">\n  <label>write task here</label>\n  <button (click)=\"add($event)\"  class=\"add-button\"> <img class=\"plus\" src ='../../../assets/picture/plus.png'/></button>\n\n</div>\n\n<app-list-tasks [listTaskChild]=\"listTask\"></app-list-tasks>\n"
 
 /***/ }),
 
@@ -343,7 +343,7 @@ var AddTaskComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "li {\r\n  list-style: none;\r\n  background-color: #efefef;\r\n  margin-bottom: 10px;\r\n  padding: 7px;\r\n  font-family: Calibri;\r\n  font-size: 12px;\r\n  color: #582eb5;\r\n}\r\n"
+module.exports = "li {\r\n  list-style: none;\r\n  background-color: #efefef;\r\n  margin-bottom: 5px;\r\n  margin-top: 20px;\r\n  padding: 7px;\r\n  font-family: Calibri;\r\n  font-size: 16px;\r\n  color: #582eb5;\r\n  height: 40px;\r\n  display: flex;\r\n  align-items: center;\r\n  position: relative;\r\n}\r\n\r\n\r\nul {\r\n  margin-top: 40px;\r\n}\r\n\r\n\r\n.del {\r\n  position: absolute;\r\n  right: 10px;\r\n  display: flex;\r\n  align-items: flex-end;\r\n  background-color: #6200EE;\r\n\r\n  width: 35px;\r\n  height: 35px;\r\n  background-color: #6200EE;\r\n  border: none;\r\n  cursor: pointer;\r\n  border-radius: 50%;\r\n  outline: none;\r\n  margin-left: 10px;\r\n}\r\n\r\n\r\n.delete {\r\n  height: 20px;\r\n  width: 20px;\r\n  padding-left: 8px;\r\n}\r\n"
 
 /***/ }),
 
@@ -354,7 +354,7 @@ module.exports = "li {\r\n  list-style: none;\r\n  background-color: #efefef;\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n  <li *ngFor=\"let task of listTaskChild\">\n    {{task}}\n  </li>\n</ul>\n\n"
+module.exports = "<ul>\n  <li *ngFor=\"let task of listTaskChild\">\n    {{task}}\n    <button class=\"del\"><img class=\"delete\" src ='../../../assets/picture/delete.png'/></button>\n  </li>\n</ul>\n\n"
 
 /***/ }),
 
