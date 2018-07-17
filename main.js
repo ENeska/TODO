@@ -287,7 +287,7 @@ module.exports = ".add-input {\r\n  width: 300px;\r\n  height: 30px;\r\n  margin
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"div\">\n\n  <input [(ngModel)] =\"newTask\" type=\"text\" class=\"add-input effect\">\n  <label>write task here</label>\n  <button (click)=\"add($event)\"  class=\"add-button\"> <img class=\"plus\" src ='../../../assets/picture/plus.png'/></button>\n\n</div>\n\n<app-list-tasks [listTaskChild]=\"listTask\"></app-list-tasks>\n"
+module.exports = "\n<div class=\"div\">\n\n  <input [(ngModel)] =\"newTask\" type=\"text\" class=\"add-input effect\">\n  <label>write task here</label>\n  <button (click)=\"add($event)\"  class=\"add-button\"> <img class=\"plus\" src ='./assets/picture/plus.png'/></button>\n\n</div>\n\n<app-list-tasks [listTaskChild]=\"listTask\"></app-list-tasks>\n"
 
 /***/ }),
 
@@ -354,7 +354,7 @@ module.exports = "li {\r\n  list-style: none;\r\n  background-color: #efefef;\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n  <li *ngFor=\"let task of listTaskChild\">\n    {{task}}\n    <button class=\"del\"><img class=\"delete\" src ='../../../assets/picture/delete.png'/></button>\n  </li>\n</ul>\n\n"
+module.exports = "<ul>\n  <li *ngFor=\"let task of listTaskChild\">\n    {{task}}\n    <button class=\"del\"><img class=\"delete\" src ='./assets/picture/delete.png'/></button>\n  </li>\n</ul>\n\n"
 
 /***/ }),
 
