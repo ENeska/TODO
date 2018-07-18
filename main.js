@@ -224,7 +224,7 @@ module.exports = "\r\n.header{\r\n  background-color: #6200EE;\r\n  height: 130p
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"header\">\n  <h1>ToDo</h1>\n  <h2>Simple App</h2>\n</div>\n"
+module.exports = "<div class=\"header\">\n  <h1>ToDo</h1>\n\n</div>\n"
 
 /***/ }),
 
@@ -276,7 +276,7 @@ var HeaderComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".add-input {\r\n  width: 300px;\r\n  height: 30px;\r\n  margin: 50px 10px 30px 0;\r\n  border-top-style: none;\r\n  border-left-style: none;\r\n  border-right-style: none;\r\n  border-bottom: 1px solid grey;\r\n  background-color: white;\r\n  outline: none;\r\n  padding-left: 10px;\r\n\r\n  font-family: Calibri;\r\n  font-weight: 200;\r\n  color: #939291;\r\n  padding-top: 10px;\r\n\r\n  font-size:20px;\r\n}\r\n\r\n.add-input:focus {\r\n  border-bottom: 1px solid #6c3dfd;\r\n\r\n}\r\n\r\n.add-button {\r\n  width: 35px;\r\n  height: 35px;\r\n  background-color: #6200EE;\r\n  border: none;\r\n  cursor: pointer;\r\n  border-radius: 50%;\r\n  outline: none;\r\n  margin-left: 10px;\r\n}\r\n\r\n.effect {\r\n  font-family: Calibri;\r\n  border: 0;\r\n  padding: 4px 0;\r\n  border-bottom: 1px solid #ccc;\r\n  background-color: transparent;\r\n  padding-left: 3px;\r\n}\r\n\r\n.effect ~ label{\r\n  font-family: Calibri;\r\n  position: absolute;\r\n  left: 0;\r\n  top: 60px;\r\n  color: #aaa;\r\n  transition: 0.3s;\r\n  z-index: -1;\r\n  font-size: 18px;\r\n  padding-left: 3px;\r\n}\r\n\r\n.effect:focus ~ label{\r\n  font-family: Calibri;\r\n  top: 20px;\r\n  font-size: 12px;\r\n  color: #6c3dfd;\r\n  transition: 0.3s;\r\n}\r\n\r\n.div {\r\n  position: relative;\r\n}\r\n\r\n.plus{\r\n  width: 20px;\r\n  height: 20px;\r\n  padding-top: 3px;\r\n}\r\n"
+module.exports = ".add-input {\r\n  width: 300px;\r\n  height: 30px;\r\n  margin: 50px 10px 30px 0;\r\n  border-top-style: none;\r\n  border-left-style: none;\r\n  border-right-style: none;\r\n  border-bottom: 1px solid grey;\r\n  background-color: white;\r\n  outline: none;\r\n  padding-left: 10px;\r\n\r\n  font-family: Calibri;\r\n  font-weight: 200;\r\n  color: #939291;\r\n  padding-top: 10px;\r\n\r\n  font-size:20px;\r\n}\r\n\r\n.add-input:focus {\r\n  border-bottom: 1px solid #6c3dfd;\r\n\r\n}\r\n\r\n.add-button {\r\n  width: 35px;\r\n  height: 35px;\r\n  background-color: #6200EE;\r\n  border: none;\r\n  cursor: pointer;\r\n  border-radius: 50%;\r\n  outline: none;\r\n  margin-left: 10px;\r\n}\r\n\r\n.effect {\r\n  font-family: Calibri;\r\n  border: 0;\r\n  padding: 4px 0;\r\n  border-bottom: 1px solid #ccc;\r\n  background-color: transparent;\r\n  padding-left: 3px;\r\n}\r\n\r\n.effect ~ label{\r\n  font-family: Calibri;\r\n  position: absolute;\r\n  left: 0;\r\n  top: 75px;\r\n  color: #aaa;\r\n  transition: 0.3s;\r\n  z-index: -1;\r\n  font-size: 18px;\r\n  padding-left: 15px;\r\n}\r\n\r\n.effect:focus ~ label{\r\n  font-family: Calibri;\r\n  top: 50px;\r\n  font-size: 12px;\r\n  color: #6c3dfd;\r\n  transition: 0.3s;\r\n}\r\n\r\n.div {\r\n  position: relative;\r\n  z-index: 0;\r\n  background-color: rgb(236, 235, 243);\r\n  height: 100%;\r\n  padding: 15px;\r\n}\r\n\r\n.plus{\r\n  width: 20px;\r\n  height: 20px;\r\n  padding-top: 3px;\r\n}\r\n\r\n.menu {\r\n  width: 100%;\r\n  background-color: rgb(248, 247, 255);\r\n\r\n\r\n}\r\n\r\n.inProgressBtn, .DoneBtn{\r\n\r\n  height: 50px;\r\n  width: 50%;\r\n  text-align: left;\r\n  font-size: 20px;\r\n  background-color: rgb(208, 207, 215);\r\n  border: none;\r\n  outline: none;\r\n  color: rgb(91, 86, 142);\r\n  cursor: pointer;\r\n  font-weight: 300;\r\n  font-family: Calibri;\r\n  border-bottom: 5px solid rgb(208, 207, 215);\r\n  padding-left: 10px;\r\n}\r\n\r\n.inProgressBtn:focus, .DoneBtn:focus {\r\n  border-bottom: 5px solid rgb(109, 112, 137);\r\n}\r\n"
 
 /***/ }),
 
@@ -287,7 +287,7 @@ module.exports = ".add-input {\r\n  width: 300px;\r\n  height: 30px;\r\n  margin
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"div\">\n\n  <input [(ngModel)] =\"newTask\" type=\"text\" class=\"add-input effect\">\n  <label>write task here</label>\n  <button (click)=\"add($event)\"  class=\"add-button\"> <img class=\"plus\" src ='./assets/picture/plus.png'/></button>\n\n</div>\n\n<app-list-tasks [listTaskChild]=\"listTask\"></app-list-tasks>\n"
+module.exports = "\n\n<div class=\"menu\">\n  <button class=\"menuComponent inProgressBtn\" (click)=\"openInProgress($event)\">In progress</button>\n  <button class=\"menuComponent DoneBtn\" (click)=\"openDone($event)\">Done</button>\n</div>\n\n<div class=\"div\" id=\"inProgressList\">\n\n  <input [(ngModel)] =\"newTask\" type=\"text\" class=\"add-input effect\">\n  <label>write task here</label>\n  <button (click)=\"add($event)\"  class=\"add-button\"> <img class=\"plus\" src ='./assets/picture/plus.png'/></button>\n\n  <app-list-tasks [listTaskChild]=\"listTask\"></app-list-tasks>\n\n</div>\n\n<!--<div class=\"div\" id=\"doneList\">-->\n\n<!--</div>-->\n"
 
 /***/ }),
 
@@ -320,6 +320,8 @@ var AddTaskComponent = /** @class */ (function () {
         this.listTask.push(this.newTask);
         this.newTask = '';
     };
+    AddTaskComponent.prototype.openInProgress = function () { };
+    AddTaskComponent.prototype.openDone = function () { };
     AddTaskComponent.prototype.ngOnInit = function () { };
     AddTaskComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -343,7 +345,7 @@ var AddTaskComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "li {\r\n  list-style: none;\r\n  background-color: #efefef;\r\n  margin-bottom: 5px;\r\n  margin-top: 20px;\r\n  padding: 7px;\r\n  font-family: Calibri;\r\n  font-size: 16px;\r\n  color: #582eb5;\r\n  height: 40px;\r\n  display: flex;\r\n  align-items: center;\r\n  position: relative;\r\n}\r\n\r\n\r\nul {\r\n  margin-top: 40px;\r\n}\r\n\r\n\r\n.del {\r\n  position: absolute;\r\n  right: 10px;\r\n  display: flex;\r\n  align-items: flex-end;\r\n  background-color: #6200EE;\r\n\r\n  width: 35px;\r\n  height: 35px;\r\n  background-color: #6200EE;\r\n  border: none;\r\n  cursor: pointer;\r\n  border-radius: 50%;\r\n  outline: none;\r\n  margin-left: 10px;\r\n}\r\n\r\n\r\n.delete {\r\n  height: 20px;\r\n  width: 20px;\r\n  padding-left: 8px;\r\n}\r\n"
+module.exports = "li {\r\n  list-style: none;\r\n  background-color: white;\r\n  margin-bottom: 5px;\r\n  margin-top: 20px;\r\n  padding: 7px;\r\n  font-family: Calibri;\r\n  font-size: 16px;\r\n  color: #582eb5;\r\n  height: 40px;\r\n  display: flex;\r\n  align-items: center;\r\n  position: relative;\r\n}\r\n\r\n\r\nul {\r\n  margin-top: 40px;\r\n}\r\n\r\n\r\n.del {\r\n  position: absolute;\r\n  right: 10px;\r\n  display: flex;\r\n  align-items: flex-end;\r\n  background-color: #6200EE;\r\n\r\n  width: 35px;\r\n  height: 35px;\r\n  background-color: #6200EE;\r\n  border: none;\r\n  cursor: pointer;\r\n  border-radius: 50%;\r\n  outline: none;\r\n  margin-left: 10px;\r\n}\r\n\r\n\r\n.delete {\r\n  height: 20px;\r\n  width: 20px;\r\n  padding-left: 8px;\r\n}\r\n\r\n\r\n.done {\r\n  position: absolute;\r\n  right: 50px;\r\n  display: flex;\r\n  align-items: flex-end;\r\n  background-color: #6200EE;\r\n\r\n  width: 35px;\r\n  height: 35px;\r\n  background-color: #6200EE;\r\n  border: none;\r\n  cursor: pointer;\r\n  border-radius: 50%;\r\n  outline: none;\r\n  margin-left: 10px;\r\n}\r\n"
 
 /***/ }),
 
@@ -354,7 +356,7 @@ module.exports = "li {\r\n  list-style: none;\r\n  background-color: #efefef;\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n  <li *ngFor=\"let task of listTaskChild\">\n    {{task}}\n    <button class=\"del\"><img class=\"delete\" src ='./assets/picture/delete.png'/></button>\n  </li>\n</ul>\n\n"
+module.exports = "<ul>\n  <li *ngFor=\"let task of listTaskChild\">\n    {{task}}\n    <button (click)=\"deleteTask(task)\" class=\"del\"><img class=\"delete\" src ='./assets/picture/delete.png'/></button>\n    <button  class=\"done\"><img class=\"delete\" src ='./assets/picture/done.png'/></button>\n  </li>\n</ul>\n\n"
 
 /***/ }),
 
@@ -384,6 +386,10 @@ var ListTasksComponent = /** @class */ (function () {
     }
     ListTasksComponent.prototype.ngOnInit = function () {
     };
+    ListTasksComponent.prototype.deleteTask = function (task) {
+        this.i = this.listTaskChild.indexOf(task);
+        this.listTaskChild.splice(this.i, 1);
+    };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
         __metadata("design:type", Object)
@@ -409,7 +415,7 @@ var ListTasksComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\r\n"
 
 /***/ }),
 
