@@ -227,7 +227,7 @@ module.exports = ".add-input {\r\n  width: 300px;\r\n  height: 30px;\r\n  margin
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n\n<div class=\"menu\">\n  <button class=\"menuComponent inProgressBtn\" (click)=\"openInProgress($event)\">Upcoming</button>\n  <button class=\"menuComponent DoneBtn\" (click)=\"openDone($event)\">Finished</button>\n</div>\n\n<div class=\"div\" id=\"inProgressList\">\n\n\n\n\n\n  <input maxlength=\"20\" [(ngModel)] =\"newTask\" type=\"text\" class=\"add-input effect\">\n  <label>write task here</label>\n  <button (click)=\"add($event)\"  class=\"add-button\"> <img class=\"plus\" src ='../../../assets/picture/plus.png'/></button>\n\n  <app-list-tasks [listTaskChild]=\"listTask\"></app-list-tasks>\n\n</div>\n\n"
+module.exports = "\n\n<div class=\"menu\">\n  <button class=\"menuComponent inProgressBtn\" (click)=\"openInProgress($event)\">Upcoming</button>\n  <button class=\"menuComponent DoneBtn\" (click)=\"openDone($event)\">Finished</button>\n</div>\n\n<div class=\"div\" id=\"inProgressList\">\n\n\n\n\n\n  <input maxlength=\"20\" [(ngModel)] =\"newTask\" type=\"text\" class=\"add-input effect\">\n  <label>write task here</label>\n  <button (click)=\"add($event)\"  class=\"add-button\"> <img class=\"plus\" src ='./assets/picture/plus.png'/></button>\n\n  <app-list-tasks [listTaskChild]=\"listTask\"></app-list-tasks>\n\n</div>\n\n"
 
 /***/ }),
 
@@ -296,7 +296,7 @@ module.exports = "li {\r\n  list-style: none;\r\n  background-color: white;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n  <li *ngFor=\"let task of listTaskChild\">\n    {{task}}\n    <button (click)=\"deleteTask(task)\" class=\"del\"><img class=\"delete\" src ='../../../assets/picture/delete.png'/></button>\n    <button  class=\"done\"><img class=\"delete\" src ='../../../assets/picture/done.png'/></button>\n  </li>\n</ul>\n\n"
+module.exports = "<ul>\n  <li *ngFor=\"let task of listTaskChild\">\n    {{task}}\n    <button (click)=\"deleteTask(task)\" class=\"del\"><img class=\"delete\" src ='../../../assets/picture/delete.png'/></button>\n    <button  class=\"done\"><img class=\"delete\" src ='./assets/picture/done.png'/></button>\n  </li>\n</ul>\n\n"
 
 /***/ }),
 
@@ -481,7 +481,10 @@ var MainComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".acc{\r\n  margin: 10px;\r\n  width:80px;\r\n  height: 80px;\r\n  background-color: #196a85;\r\n  border: none;\r\n  cursor: pointer;\r\n  border-radius: 50%;\r\n  outline: none;\r\n}\r\n\r\n.account {\r\n  display: flex;\r\n}\r\n\r\n.accBtn {\r\n  height: 60px;\r\n  width: 60px;\r\n}\r\n\r\n.nameAcc {\r\n  color: #e8e9ea;\r\n  font-family: Calibri;\r\n}\r\n\r\n.accHello {\r\n  padding-left: 10px;\r\n  padding-top: 5px;\r\n  font-size: 30px;\r\n  line-height: 3px;\r\n}\r\n"
+module.exports = ".acc{\r\n  margin: 10px;\r\n  width:80px;\r\n  height: 80px;\r\n  background-color: #196a85;\r\n  border: none;\r\n  cursor: pointer;\r\n  border-radius: 50%;\r\n  outline: none;\r\n}\r\n\r\n.
+	
+	
+	{\r\n  display: flex;\r\n}\r\n\r\n.accBtn {\r\n  height: 60px;\r\n  width: 60px;\r\n}\r\n\r\n.nameAcc {\r\n  color: #e8e9ea;\r\n  font-family: Calibri;\r\n}\r\n\r\n.accHello {\r\n  padding-left: 10px;\r\n  padding-top: 5px;\r\n  font-size: 30px;\r\n  line-height: 3px;\r\n}\r\n"
 
 /***/ }),
 
@@ -492,7 +495,7 @@ module.exports = ".acc{\r\n  margin: 10px;\r\n  width:80px;\r\n  height: 80px;\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"account\">\n\n  <button class=\"acc\"><img class=\"accBtn\" src ='../../../assets/picture/account.png'/></button>\n  <div class=\"accHello\">\n    <p class=\"nameAcc\">Hello,</p>\n    <p class=\"nameAcc\">Elzbieta</p>\n  </div>\n\n\n</div>\n"
+module.exports = "<div class=\"account\">\n\n  <button class=\"acc\"><img class=\"accBtn\" src ='./assets/picture/account.png'/></button>\n  <div class=\"accHello\">\n    <p class=\"nameAcc\">Hello,</p>\n    <p class=\"nameAcc\">Elzbieta</p>\n  </div>\n\n\n</div>\n"
 
 /***/ }),
 
