@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "* {\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  display: flex;\n  justify-content: center;\n}\n"
+module.exports = "body {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  height: 100%;\n  width: 100%;\n}\n"
 
 /***/ }),
 
